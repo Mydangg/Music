@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="16dp"
+    tools:context=".SearchActivity">
+
+    <EditText
+        android:id="@+id/search_song_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên bài hát"
+
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/songs_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_song_name"
+        android:layout_above="@+id/player_view"/>
+    <RelativeLayout
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation"
+        android:background="@drawable/rounded_corner"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="592dp">
+
+        <ImageView
+            android:id="@+id/song_cover_image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/song_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/song_cover_image_view"
+            android:paddingStart="16dp"
+            android:text="Đang phát : "
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        layout="@layout/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/home"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableTop="@drawable/home_icon" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/search"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableTop="@drawable/search_icon">
+        </Button>
+        <Button
+            android:id="@+id/favouriteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/favourite"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableTop="@drawable/favorite_icon">
+        </Button>
+        <Button
+            android:id="@+id/playlistBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/playlist"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableTop="@drawable/playlist_add_icon">
+        </Button>
+
+    </LinearLayout>
+</RelativeLayout>

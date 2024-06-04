@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/home"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableTop="@drawable/home_icon" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/search"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableTop="@drawable/search_icon">
+        </Button>
+
+    <Button
+        android:id="@+id/favouriteBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="109dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/favourite"
+        android:drawableTop="@drawable/favorite_icon" />
+        <Button
+            android:id="@+id/playlistBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/playlist"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableTop="@drawable/playlist_add_icon">
+        </Button>
+
+
+    </LinearLayout>

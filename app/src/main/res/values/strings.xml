@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Music Stream</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="playlist">Playlists</string>
+    <string name="favourite">Favourite</string>
+    <string name="playlist_note">Nhấn vào ➕ để tạo Playlist mới. </string>
+    <string name="add">Add</string>
+    <string name="playlistname">Playlist Name</string>
+    <string name="yourname">Your Name</string>
+    <string name="add_song">Add</string>
+    <string name="remove_all">Remove All</string>
+    <string name="song_img">Song Image</string>
+    <string name="playlist_name">Playlist Name</string>
+    <string name="playlist_delete">Delete</string>
+    <string name="song_list">Song List</string>
+    <string name="playing">Đang phát :</string>
+    <string name="more_options">option\n</string>
+</resources>
